@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+vscode/
+coverage/
+*.min.js
+*.bundle.js
+*.map
+*.log
+.DS_Store
+.env
