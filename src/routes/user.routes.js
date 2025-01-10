@@ -5,13 +5,13 @@ import { upload } from "../middlewares/multer.middlewares.js";
 const router = Router();
 
 router.route("/register").post(
-  upload.fields(
+  upload.fields([
     {
       name: "avatar",
       maxcount: 1,
     },
-    { name: "coverImage", maxcount: 1 }
-  ),
+    { name: "coverImage", maxcount: 1 },
+  ]),
   registerUser
 );
 
